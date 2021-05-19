@@ -55,22 +55,20 @@ public class Main {
         System.out.printf("Phan tu min trong mang la %d \n", minValue);
         System.out.printf("Index cua phan tu min trong mang la %d\n", index1);
 
+
         //Bai 2
 //        System.out.println("Bai tap so 1");
 //        int m;
 //        System.out.println("Nhap vao so phan tu cua mang");
-//        Scanner scan1= new Scanner(System.in);
-//        m=scan1.nextInt();
-//        String strArray[]= new String[m];
-//        for (int j=0; j<strArray.length; j++){
-//            System.out.println("Nhap phan tu thu:" +j+ ":");
-//            strArray[j]= String.valueOf(scan1.nextInt());
+//        Scanner scan1 = new Scanner(System.in);
+//        m = scan1.nextInt();
+//        String strArray[] = new String[m];
+//        for (int j = 0; j < strArray.length; j++) {
+//            System.out.println("Nhap phan tu thu:" + j + ":");
+//            strArray[j] = scan1.next();
 //        }
 //        //In phan tu cua mang
-//        System.out.println("phan tu cua mang la:");
-//        for (int j=0; j<strArray.length; j++){
-//            System.out.println(Arrays.toString(strArray));
-//        }
+//        System.out.println("phan tu cua mang la:" + Arrays.toString(strArray));
 
 
     }
