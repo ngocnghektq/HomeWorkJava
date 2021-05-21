@@ -9,8 +9,8 @@ public class Main {
         int col = scr.nextInt();
         int arrVuong[][] = new int[row][col];
         nhapMang(arrVuong, row, col);
-       // Bai2 bai2= new Bai2();
-       // bai2.NhapMang1C();
+        // Bai2 bai2= new Bai2();
+        // bai2.NhapMang1C();
     }
 
     static void nhapMang(int arr[][], int row, int col) {
@@ -52,22 +52,27 @@ public class Main {
         //Sap xep hang 2 theo chieu tang dan
         //Đoạn này sai chưa hiểu vì sao nó quá index và không sắp xếp từ số 4
         int tem;
-        int i = 1;
-//        for (int i = 1; ; ) {
-        for (int j = 0; j <col-1; j++) {
-            if (arr[i][j] < arr[i][j + 1]) {
-                tem = arr[i][j];
-                arr[i][j] = arr[i][j + 1];
-                arr[i][j + 1] = tem;
+        //int i = 1;
+        System.out.println("Mang sau khi sap xep hang 2");
+        for (int i = 1;i<2 ;i++ ) {
 
+            for (int j = 0; j < col - 1; j++) {
+                if (arr[i][j] > arr[i][j + 1]) {
+                    tem = arr[i][j];
+                    arr[i][j] = arr[i][j + 1];
+                    arr[i][j + 1] = tem;
+
+                   // System.out.print(arr[i][j] + "\t");
+
+                }
+
+                 System.out.print(arr[i][j] + "\t");
 
             }
-            System.out.println("Mang sau khi sap xep hang 2");
-            System.out.print(arr[i][j] + "\t");
-        }
 
         }
     }
+}
 
 
 
