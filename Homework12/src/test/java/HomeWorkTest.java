@@ -20,12 +20,12 @@ public class HomeWorkTest {
     @Test
     public void ktCanNangKG()
     {
-        String donviKG = "48.5kg";
+        float donviKG = 48.5f;
 
-        Assertions.assertThat(donviKG).isNotEmpty()
-                .doesNotStartWith("0") // can nang khong duoi 1kg vi tre so sinh cung tren 1kg :)
-                .containsPattern("^[0-9]+[.]+[0-9]+[a-z&&[kg]]"); //Khong gioi han hasSize vi co nguoi 50kg co nguoi tren 100 kg
-        //Khong can cac dieu kien doesNotContain vi dieu kien contain da cover duoc het case
+        Assertions.assertThat(donviKG).isNotZero()
+                .isBetween(0.6f,250f);// can nang khong duoi 0.6kg vi tre so sinh cung tren 0.6kg :)
+
+
     }
     @Test
     public void ktCanNangDonVigam(){
